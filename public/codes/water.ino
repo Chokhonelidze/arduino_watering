@@ -1,0 +1,83 @@
+const int AirValue = 660;   //you need to replace this value with Value_1
+const int WaterValue = 315;  //you need to replace this value with Value_2
+const int AirValue2 = 270;   //you need to replace this value with Value_1
+const int WaterValue2 = 167;  //you need to replace this value with Value_2
+
+int intervals = (AirValue - WaterValue)/3;
+int intervals2 = (AirValue2 - WaterValue2)/3;
+int soilMoistureValue = 0;
+int soilMoistureValue2 = 0;
+int soilmoisturepercent = 0;
+int soilmoisturepercent2 = 0;
+int output=2;
+int output2=3;
+void setup() {
+  Serial.begin(9600); // open serial port, set the baud rate to 9600 bps
+  pinMode(output,OUTPUT);
+  pinMode(output2,OUTPUT);
+}
+void loop() {
+soilMoistureValue = analogRead(A0);  //put Sensor insert into 
+Serial.println(soilMoistureValue);
+soilmoisturepercent = map(soilMoistureValue, AirValue, WaterValue, 0, 100);
+if(soilMoistureValue > WaterValue && soilMoistureValue < (WaterValue + intervals))
+{
+  Serial.print(soilmoisturepercent);
+  Serial.println("%");
+  Serial.println("Very Wet");
+  digitalWrite(output,LOW);
+  
+}
+else if(soilMoistureValue > (WaterValue + intervals) && soilMoistureValue < (AirValue - intervals))
+{
+  if(soilmoisturepercent <= 40 ){
+    digitalWrite(output,HIGH);
+    delay(10000);
+  }
+  Serial.print(soilmoisturepercent);
+  Serial.println("%");
+  Serial.println("Wet");
+  digitalWrite(output,LOW);
+}
+else if(soilMoistureValue < AirValue && soilMoistureValue > (AirValue - intervals))
+{
+  Serial.print(soilmoisturepercent);
+  Serial.println("%");
+  Serial.println("Dry");
+  digitalWrite(output,HIGH);
+}
+
+Serial.println("sensor 2");
+//sensor 2
+soilMoistureValue2 = analogRead(A1);  //put Sensor insert into 
+
+soilmoisturepercent2 = map(soilMoistureValue2, AirValue2, WaterValue2, 0, 100);
+Serial.println(soilmoisturepercent2);
+if(soilMoistureValue2 > WaterValue2 && soilMoistureValue2 < (WaterValue2 + intervals2))
+{
+  Serial.print(soilmoisturepercent2);
+  Serial.println("%");
+  Serial.println("Very Wet 2");
+  digitalWrite(output2,LOW);
+  
+}
+else if(soilMoistureValue2 > (WaterValue2 + intervals) && soilMoistureValue2 < (AirValue2 - intervals2))
+{
+  if(soilmoisturepercent2 <= 40 ){
+    digitalWrite(output2,HIGH);
+    delay(10000);
+  }
+  Serial.print(soilmoisturepercent2);
+  Serial.println("%");
+  Serial.println("Wet2");
+  digitalWrite(output2,LOW);
+}
+else if(soilMoistureValue2 < AirValue2 && soilMoistureValue2 > (AirValue2 - intervals2))
+{
+  Serial.print(soilmoisturepercent2);
+  Serial.println("%");
+  Serial.println("Dry2");
+  digitalWrite(output2,HIGH);
+}
+delay(100);
+}

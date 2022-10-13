@@ -1,0 +1,30 @@
+.mid-images {
+    width:200px;
+    padding-bottom: 20px;
+}
+.link {
+    text-decoration: none;
+    color: purple;
+}
+fieldset {
+    min-width: auto;
+    padding: inherit;
+    margin: unset;
+    border: inset;
+    border-style: groove;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+legend {
+    float: unset;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: calc(1.275rem + .3vw);
+    line-height: inherit;
+}
+
+.requirements div {
+    padding:10%;
+}
