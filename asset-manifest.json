@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/arduino_watering/static/css/main.cab760a4.css",
+    "main.js": "/arduino_watering/static/js/main.010120ad.js",
+    "static/js/787.27c738e5.chunk.js": "/arduino_watering/static/js/787.27c738e5.chunk.js",
+    "index.html": "/arduino_watering/index.html",
+    "main.cab760a4.css.map": "/arduino_watering/static/css/main.cab760a4.css.map",
+    "main.010120ad.js.map": "/arduino_watering/static/js/main.010120ad.js.map",
+    "787.27c738e5.chunk.js.map": "/arduino_watering/static/js/787.27c738e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cab760a4.css",
+    "static/js/main.010120ad.js"
+  ]
+}
