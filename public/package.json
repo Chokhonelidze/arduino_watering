@@ -1,0 +1,24 @@
+{
+  "name": "arduino_water",
+  "version": "1.0.0",
+  "description": "Arduino automatic watering system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chokhonelidze/arduino_watering.git"
+  },
+  "keywords": [
+    "Arduino",
+    "automatic",
+    "watering"
+  ],
+  "author": "George Chokhonelidze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chokhonelidze/arduino_watering/issues"
+  },
+  "homepage": "https://github.com/Chokhonelidze/arduino_watering#readme"
+}

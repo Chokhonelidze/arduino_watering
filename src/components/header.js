@@ -2,5 +2,5 @@
 
 export default function Header() {
 
-return <h1>Arduino Lights</h1>
+return <h1>Arduino automatic watering system</h1>
 }

@@ -3,13 +3,11 @@ export default function Main() {
   return (
     <div className="Main">
       <div className="video">
-        <video width="200" height="240" controls>
-          <source src='/arduino_lights/videos/lightsDemo2.mp4' type="video/mp4" ></source>
-        </video>
-        
+        <img src='/arduino_watering/images/main.png' alt='watering system'></img>
       </div>
       <p className="text">
-        Audio pattern-activated lights it is selecting colors randomly.
+        Arduino-based automatic watering system. 
+        The sensor checks the moisture level of the soil and water plants if needed
       </p>
     </div>
   );

@@ -3,28 +3,36 @@ export default function Hardware() {
   return (
     <div>
       <dl>
-        <h4>Connect LED to a power supply and connect LED to Arduino board.</h4>
+        <h4>Upload software to Arduino board with <a href='https://www.arduino.cc/en/software'>Arduino IDE</a>.</h4>  
+        <h4>Connect the board to soil moisture sensor.</h4>
       </dl>
       <dl>
         <img
           alt="arduino1"
           className="big-image"
-          src="/arduino_lights/images/connection1.png"
+          src="/arduino_watering/images/sensorConnection.png"
         ></img>
       </dl>
       <dl className="longtext">
-        Connect LED's positive and negative lines to the power supply, Connect
-        Arduino to LED's three lines + - and digital input.
+        Connect the water sensor to A0 +3 and gnd. 
+        You need to calibrate the sensor.
+        Open the Serial Monitor and test the sensor's air value.
+        change code <br></br> <b>const int AirValue = 660; </b><br></br>
+        Put the sensor in water and get the sensors water value and change the code
+        <br></br> <b>const int WaterValue = 315;  </b>
+        <br></br><h6 className='text-info'>you can add as many sensors as you have analog ports</h6> 
+
+
       </dl>
       <div className="mt-5"></div>
       <dl>
-        <h4>Connect Arduino to High Sensitivity Microphone Sensor.</h4>
+        <h4>Connect everything else</h4>
       </dl>
       <dl>
         <img
           alt="arduino2"
-          className="big-image"
-          src="/arduino_lights/images/connection2.png"
+          className="big-image" 
+          src="/arduino_watering/images/allConnection.png"
         ></img>
       </dl>
       <dl className="longtext">
