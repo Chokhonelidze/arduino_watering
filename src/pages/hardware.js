@@ -32,7 +32,7 @@ export default function Hardware() {
         <img
           alt="arduino2"
           className="big-image" 
-          src="/arduino_watering/images/allConnection.png"
+          src="/arduino_watering/images/allConnections.png"
         ></img>
       </dl>
       <dl className="longtext">
