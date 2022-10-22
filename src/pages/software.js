@@ -9,8 +9,8 @@ export default function Software(){
                 <b>const int WaterValue = 315;</b>
             </p>
             <p className='text-info'>
-            To configure sensor(s) open the serial monitor in Arduino IDE. change AirValue based on sensor input.
-                put the sensor in water and measure again change WaterValue based on sensor's water value mesasurements.
+            To configure sensor(s) open the serial monitor in Arduino IDE. Change AirValue based on sensor input.
+                Put the sensor in water and measure again change WaterValue based on sensor's water value measurements.
             </p>
             <a href="/arduino_watering/codes/water.ino" className="btn btn-primary m-3" role="button">Download</a>
         <iframe title='watering' src="/arduino_watering/codes/water.html" className="iframe"></iframe>

@@ -7,7 +7,7 @@ export default function Main() {
       </div>
       <p className="text">
         Arduino-based automatic watering system. 
-        The sensor checks the moisture level of the soil and water plants if needed
+        The sensor checks the moisture level of the soil and waters plants if needed.
       </p>
     </div>
   );

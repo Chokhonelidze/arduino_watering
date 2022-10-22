@@ -41,7 +41,7 @@ export default function Hardware() {
         the #3 port of the Arduino board.
       </dl>
       <dl className="text-danger longtext">
-      Do not connect Arduino directly to the power supply user LED's output power lines instead.
+        Do not connect Arduino directly to the power supply, use LED's output power lines instead.
       </dl>
     </div>
   );
