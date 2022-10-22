@@ -40,9 +40,6 @@ export default function Hardware() {
         - and digital output, connect the digital output from the microphone to
         the #3 port of the Arduino board.
       </dl>
-      <dl className="text-danger longtext">
-        Do not connect Arduino directly to the power supply, use LED's output power lines instead.
-      </dl>
     </div>
   );
 }
